@@ -7,13 +7,7 @@ This project has been built using Django 2.1
 
 Install the project dependancies
 ```bash
-pip install requirements.txt
-```
-
-Install optional oscar template requirements
-```bash
-pip install django-compressor
-pip install django-widget-tweaks
+pip install -r ./requirements.txt
 ```
 
 Create the database structure
