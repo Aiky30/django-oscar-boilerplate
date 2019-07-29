@@ -10,12 +10,6 @@ Install the project dependancies
 pip install -r ./requirements.txt
 ```
 
-Install optional oscar template requirements
-```bash
-pip install django-compressor
-pip install django-widget-tweaks
-```
-
 Create the database structure
 ```bash
 python manage.py migrate
