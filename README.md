@@ -7,7 +7,7 @@ This project has been built using Django 2.1
 
 Install the project dependancies
 ```bash
-pip install requirements.txt
+pip install -r ./requirements.txt
 ```
 
 Install optional oscar template requirements
