@@ -172,8 +172,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
+# Media files
+MEDIA_URL = '/media/'
+
+
+# Site
 SITE_ID = 1
 
 
@@ -185,15 +191,16 @@ HAYSTACK_CONNECTIONS = {
 }
 
 
-#################
-# Oscar specific settings
-#################
-
 # Auth backends
 AUTHENTICATION_BACKENDS = (
     'oscar.apps.customer.auth_backends.EmailBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
+
+
+#########################
+# Oscar specific settings
+########################
 
 
 # Order pipeline
